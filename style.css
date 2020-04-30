@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+
+  html,
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%; 
+
+    display: flex;
+    flex-direction: column;
+    
+    min-height: 100%;
+  }
+
+  .flex-item {
+    width: 1440px;
+    margin: 0 auto;
+
+    overflow: hidden;
+  }
+  
+  header {
+    max-width: 1440px;
+    min-height: 218px;
+
+    background-color: white;
+  }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 47px;
+    letter-spacing: 1px;
+    color: #000000;
+    text-align: center;
+
+    margin-top: 60px;
+    margin-bottom: 46px;
+  }
+ 
+  h1::first-letter {
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+  }
+
+  nav {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .header-navigation {
+    max-width: 1170px;
+    margin-left: 135px;
+    margin-right: 135px;
+  }
+
+  li {
+    display: inline;
+  }
+
+  li > a:hover,
+  li > a:focus {
+    color: #FF7931;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .blog {
+    background-image: url(img/Hotel-11.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .blog-wrapper {
+    min-height: 464px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+  }
+
+  h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 84px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 133px;
+    position: relative;
+  }
+
+  h2 > a {
+    color: white;
+  }
+
+  h2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: calc(50% - 55px / 2);
+    bottom: 112px; 
+    width: 55px;
+    height: 55px;
+    background-image: url(img/Group24.svg);
+    background-color: #FF7931;
+    border-radius: 50%;
+  }
+
+  .blog-article {
+    color: white;
+    text-align: center;
+    max-width: 455px;
+    margin-top: auto;
+    margin-bottom: 48px;
+  }
+
+  h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+
+    margin-top: 44px;
+  }
+
+  h4 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 31px;
+    color: #000000;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  h4 a:hover,
+  h4 a:focus {
+  color: #FF7931;
+  }
+
+  .review {
+    max-width: 1440px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-bottom: 0;
+  }
+
+  .column:nth-child(2n) {
+    margin-left: 29px;
+    margin-right: 29px;
+  }
+
+  img {
+    display: block;
+  }
+
+  .column-image {
+    min-width: 370px;
+    max-width: 370px;
+    max-height: 203px;
+    
+  }
+
+  .column-article {
+    max-width: 370px;
+    text-align: left;
+  }
+
+  .season-tickets {
+    max-width: 1440px;
+    margin-top: 53px;
+    min-height: 556px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-image: url(img/Ellipse1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #F7F7F7;
+    mix-blend-mode: normal;
+  }
+
+  .season-tickets-title {
+    margin-top: 33px;
+  }
+
+  .bottom-article-title {
+    margin-bottom: 10px;
+  }
+
+  .bottom-article {
+    margin-top: 0;
+    margin-bottom: 24px;
+    max-width: 370px;
+    min-height: 63px;
+    text-align: center;
+  }
+
+  .bottom-article:not(:last-of-type)::after {
+    content: "";
+    display: block;
+    position: relative;
+    left: calc((370px - 100px) / 2);
+    top: 37px;
+    opacity: 0.4;
+    transform: rotate(0.1deg);
+    max-width: 100px;
+    max-height: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  button {
+    width: 170px;
+    height: 47px;
+    background-color: #FF7931;
+    margin-top: 25px;
+    margin-bottom: 86px;
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+  }
+
+  main::after {
+    content: "";
+    display: block;
+    
+    min-height: 50px;
+    background-color: white;
+  }
+
+  footer {
+    max-width: 1440px;
+    background-color: #575757;
+    min-height: 295px;
+  }
+  
+  .footer-title {
+    color: white;
+  }
+
+  footer > nav > ul > li > a {
+    color: white;
+  }
+
+  .footer-navigation {
+    max-width: 1170px;
+    margin-left: 135px;
+    margin-right: 135px;
+    padding-bottom: 46px;
+    border-bottom: 1px solid #FFFFFF;
+  }
+
+ .social-links {
+  margin-top: 42px;
+  margin-bottom: 46px;
+  justify-content: center;
+ }
+
+ .social-links > li {
+    width: 47px; 
+    height: 47px;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+
+ .social-links > li:hover,
+ .social-links > li:focus {
+   background-color: #FF7931;
+ }
+
+ .social-links > li:first-child {
+   background-image: url("img/instagram_icon.svg");
+ }
+
+ .social-links > li:nth-child(2n) {
+    margin-left: 14px;
+    margin-right: 14px;
+    background-image: url("img/facebook_icon.svg");
+ }
+
+ .social-links > li:last-child {
+  background-image: url("img/twitter_icon.svg");
+ }
